@@ -1,12 +1,11 @@
 # Custom
-res/
+res/image/
 backup/
 test/
 test.py
 scratch/
 scratch.py
 *.ruff_cache
-local_config.json
 *.code-workspace
 
 # Byte-compiled / optimized / DLL files

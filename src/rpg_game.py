@@ -239,12 +239,20 @@ class PysoRealm:
         self.logger.info("# ---------- Exit... ---------- #")
 
     def run_game_loop(self) -> None:
-        """Run the main game loop until the window is closed.
+        """Continuously runs the main game loop until the window is closed.
+            In each frame, this loop:
 
-        Each frame, this loop:
-        - Initializes a new random number generator
-        - Updates delta time (`dt`)
-        - Resets character movement delta (`char_dp`)
+        - Initializes a new random number generator (`self.frame_rand`) with a fixed seed.
+        - Calculates the time elapsed since the previous frame (`self.dt`).
+        - Resets the character's movement delta (`self.char_dp`) to zero.
+        - Reads keyboard and gamepad inputs to determine the character's intended movement.
+        - Resolves the characters direction, updates the characters animation state,
+            and checks for collisions.
+        - Updates the camera's position and renders the scene
+            (ground, walls, objects, and the character).
+        - Scales the final rendered texture to match the current window size and displays it.
+
+        The loop ends when `pr.window_should_close()` returns True.
         """
         while not pr.window_should_close():
             self.frame_rand = random.Random(476)
