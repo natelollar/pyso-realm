@@ -40,7 +40,7 @@ exe = EXE(  # noqa: F821
     a.zipfiles,
     a.datas,
     [],
-    name='RPG Game',
+    name='rpg_game',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

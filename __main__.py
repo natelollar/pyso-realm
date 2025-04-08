@@ -1,4 +1,5 @@
-from src.rpg_game import main
+from src.rpg_game import PysoRealm
 
 if __name__ == "__main__":
-    main()
+    with PysoRealm() as realm:
+        realm.run_game_loop()
