@@ -17,7 +17,7 @@ Resource Image folder
     - https://kenney.nl/assets/isometric-miniature-dungeon
 
 Run via Python
-- Add project folder to PYTHONPATH windows environment variable.
+- Add project folder path to PYTHONPATH environment variable.
 - Run `__main__.py` or `rpg_game.py` via python.exe.
 
 Build Exe
