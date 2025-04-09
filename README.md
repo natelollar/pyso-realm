@@ -10,9 +10,11 @@ Made with:
 
 Resource Image folder
 - `res/image`
-- Object and animation textures currently not included.
-    - User textures needed.
-- Planning to add custom textures at a later date.
+- Object and animation images currently not included.
+    - User images needed.
+- Planning to add custom images at a later date.
+- Originally used images from here:
+    - https://kenney.nl/assets/isometric-miniature-dungeon
 
 Run via Python
 - Add project folder to PYTHONPATH windows environment variable.
@@ -32,7 +34,7 @@ Controls
 Pyray Documentation
 - https://electronstudio.github.io/raylib-python-cffi/pyray.html
 
-Inspired by this Odin programming language tutorial.
+Inspired by this Odin programming language tutorial by Ginger Bill.
 - https://youtu.be/B9kSV2TaKpw?si=bjLz4lXJsSj3GFn8
 
 ---
